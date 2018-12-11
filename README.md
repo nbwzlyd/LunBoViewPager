@@ -30,9 +30,11 @@
 
 viewPager 的轮播逻辑已经封装好，直接使用即可
 方法如下
-` mLunBoAdapter.bindData(list);
-        mViewPager.setCanLunBo(true);
-        mViewPager.setCurrentItem(2); `
+` mLunBoAdapter.bindData(list);`
+
+` mViewPager.setCanLunBo(true);`
+        
+` mViewPager.setCurrentItem(2); `
 
 其中list 是源数据，会自动生成轮播数据
 mViewPager.setCanLunBo 是否可以轮播
@@ -96,8 +98,11 @@ mLunBoAdapter.setOnItemClickListener(new AbsCarouselFigurePagerAdapter.ItemClick
 ```
 ### 重要参数和方法说明
 AbsCarouselFigurePagerAdapter中
+
 ` mData 生成的轮播数据，会比原始数据多4个 `
+
 ` mRealList 原始数据源 `
+
 ` mRealPosition 逻辑上的真实位置，而不是list中的位置，在使用该参数之前，请调用getRealPosition(int originPosition)`
 
 差不多就是这样，效果图如下：
