@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
+import com.example.viewpagerlibrary.adapter.AbsCarouselFigurePagerAdapter;
 import com.example.viewpagerlibrary.view.view.BaseCarouselFigureViewPager;
 
 import java.util.ArrayList;
@@ -48,6 +49,13 @@ public class MainActivity2 extends AppCompatActivity {
                     if (state==ViewPager.SCROLL_STATE_IDLE){
                         mViewPager.goPageIndex();
                     }
+            }
+        });
+
+        mLunBoAdapter.setOnItemClickListener(new AbsCarouselFigurePagerAdapter.ItemClickListener<Integer>() {
+            @Override
+            public void onClick(int position, Integer content) {
+
             }
         });
     }

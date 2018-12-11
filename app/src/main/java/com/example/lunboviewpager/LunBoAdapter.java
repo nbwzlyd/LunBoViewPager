@@ -26,9 +26,18 @@ public class LunBoAdapter extends AbsCarouselFigurePagerAdapter<Integer> {
     }
 
     @Override
-    protected void addChildData(View childView, int position) {
+    protected void addChildData(View childView, final int position) {
         TextView textView = childView.findViewById(R.id.textView);
-        textView.setText("第"+getRealPosition(position)+"张");
+        final int realPosition = getRealPosition(position);
+        textView.setText("第"+realPosition+"张");
+        childView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mItemClickListener!=null){
+                    mItemClickListener.onClick(realPosition,mRealList.get(realPosition));
+                }
+            }
+        });
         //or  childView.setBackgroundResource(mData.get(position));
     }
 
