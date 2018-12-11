@@ -1,3 +1,5 @@
+![示例图](https://github.com/nbwzlyd/LunBoViewPager/blob/master/app/gif/code.gif)
+
 # 简单的viewPager轮播
 
 ### 功能简单，不会集成N多用不到的功能，只有轮播效果
@@ -104,6 +106,3 @@ AbsCarouselFigurePagerAdapter中
 ` mRealList 原始数据源 `
 
 ` mRealPosition 逻辑上的真实位置，而不是list中的位置，在使用该参数之前，请调用getRealPosition(int originPosition)`
-
-差不多就是这样，效果图如下：
-![示例图](https://github.com/nbwzlyd/LunBoViewPager/blob/master/app/gif/code.gif)
