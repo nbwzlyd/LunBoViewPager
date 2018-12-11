@@ -101,3 +101,4 @@ AbsCarouselFigurePagerAdapter中
 ` mRealPosition 逻辑上的真实位置，而不是list中的位置，在使用该参数之前，请调用getRealPosition(int originPosition)`
 
 差不多就是这样，效果图如下：
+![示例图](https://github.com/nbwzlyd/LunBoViewPager/blob/master/app/gif/code.gif)
