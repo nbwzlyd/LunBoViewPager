@@ -94,7 +94,7 @@ mLunBoAdapter.setOnItemClickListener(new AbsCarouselFigurePagerAdapter.ItemClick
             }
         });
 ```
-###重要参数和方法说明
+### 重要参数和方法说明
 AbsCarouselFigurePagerAdapter中
 ` mData 生成的轮播数据，会比原始数据多4个 `
 ` mRealList 原始数据源 `
